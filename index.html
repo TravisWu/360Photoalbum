@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Testing 360 photo pan</title>
+		<meta charset="utf-8">
+
+		<!-- Valiant360 control styles -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+
+	</head>
+	<body>
+
+		<div id="buttons">
+		<p>Navigate<button id="next">Next Image</button></p>
+		</div>
+		
+
+		<div class="valiantPhoto" src="Images/2.jpg" style="width:1000px; height:700px;"></div>
+		
+		<!-- <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> -->
+		<script type="text/javascript" src="js/three.min.js"></script>
+
+		<!-- Valiant360 plugin, load after jQuery and Three.js -->
+		<script type="text/javascript" src="jquery.valiant360.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.valiantPhoto').Valiant360(
+				{ muted: false,            // video muted by default
+				
+				}
+
+					);
+			});
+		</script>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-608903-14', 'flimshaw.net');
+		  ga('send', 'pageview');
+
+		</script>
+	</body>
+</html>
